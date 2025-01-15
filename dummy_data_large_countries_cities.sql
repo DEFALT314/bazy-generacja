@@ -1,83 +1,45 @@
-INSERT INTO Country (CountryID, CountryName) VALUES
-(1, 'Germany'),
-(2, 'Poland'),
-(3, 'Denmark'),
-(4, 'France'),
-(5, 'Norway'),
-(6, 'Netherlands'),
-(7, 'Sweden'),
-(8, 'Spain'),
-(9, 'Italy'),
-(10, 'Finland');
+INSERT INTO Country (CountryName) VALUES
+('United States'), -- 1
+('Canada'),        -- 2
+('Germany'),       -- 3
+('France'),        -- 4
+('Japan'),         -- 5
+('India'),         -- 6
+('China'),         -- 7
+('Brazil'),        -- 8
+('Australia'),     -- 9
+('United Kingdom'),-- 10
+('Italy'),         -- 11
+('Spain'),         -- 12
+('South Korea'),   -- 13
+('Mexico'),        -- 14
+('Russia'),        -- 15
+('Netherlands'),   -- 16
+('Sweden'),        -- 17
+('Norway'),        -- 18
+('Argentina'),     -- 19
+('South Africa');  -- 20
 
-INSERT INTO City (CityID, CityName, CountryID) VALUES
-(1, 'Dortmund', 1),
-(2, 'Cologne', 1),
-(3, 'Leipzig', 1),
-(4, 'Munich', 1),
-(5, 'Dresden', 1),
-(6, 'Stuttgart', 1),
-(7, 'Frankfurt', 1),
-(8, 'Warsaw', 2),
-(9, 'Lublin', 2),
-(10, 'Poznan', 2),
-(11, 'Krakow', 2),
-(12, 'Bialystok', 2),
-(13, 'Gdansk', 2),
-(14, 'Lodz', 2),
-(15, 'Roskilde', 3),
-(16, 'Esbjerg', 3),
-(17, 'Odense', 3),
-(18, 'Aarhus', 3),
-(19, 'Horsens', 3),
-(20, 'Vejle', 3),
-(21, 'Kolding', 3),
-(22, 'Montpellier', 4),
-(23, 'Bordeaux', 4),
-(24, 'Paris', 4),
-(25, 'Strasbourg', 4),
-(26, 'Nice', 4),
-(27, 'Toulouse', 4),
-(28, 'Lyon', 4),
-(29, 'Kristiansand', 5),
-(30, 'Tromso', 5),
-(31, 'Sandnes', 5),
-(32, 'Trondheim', 5),
-(33, 'Oslo', 5),
-(34, 'Stavanger', 5),
-(35, 'Fredrikstad', 5),
-(36, 'Eindhoven', 6),
-(37, 'Utrecht', 6),
-(38, 'The Hague', 6),
-(39, 'Breda', 6),
-(40, 'Amsterdam', 6),
-(41, 'Tilburg', 6),
-(42, 'Leeuwarden', 6),
-(43, 'Jonkoping', 7),
-(44, 'Orebro', 7),
-(45, 'Norrkoping', 7),
-(46, 'Gothenburg', 7),
-(47, 'Helsingborg', 7),
-(48, 'Vasteras', 7),
-(49, 'Uppsala', 7),
-(50, 'Seville', 8),
-(51, 'Granada', 8),
-(52, 'Barcelona', 8),
-(53, 'Zaragoza', 8),
-(54, 'Malaga', 8),
-(55, 'Madrid', 8),
-(56, 'Alicante', 8),
-(57, 'Rome', 9),
-(58, 'Venice', 9),
-(59, 'Genoa', 9),
-(60, 'Milan', 9),
-(61, 'Palermo', 9),
-(62, 'Bologna', 9),
-(63, 'Turin', 9),
-(64, 'Vaasa', 10),
-(65, 'Pori', 10),
-(66, 'Jyvaskyla', 10),
-(67, 'Lappeenranta', 10),
-(68, 'Tampere', 10),
-(69, 'Oulu', 10),
-(70, 'Turku', 10);
+-- Wstawianie danych do tabeli City
+INSERT INTO City (CityName, CountryID) VALUES
+('New York', 1), ('Los Angeles', 1), ('Chicago', 1), ('Houston', 1), ('Phoenix', 1),
+('Toronto', 2), ('Vancouver', 2), ('Montreal', 2), ('Calgary', 2), ('Ottawa', 2),
+('Berlin', 3), ('Munich', 3), ('Hamburg', 3), ('Cologne', 3), ('Frankfurt', 3),
+('Paris', 4), ('Lyon', 4), ('Marseille', 4), ('Toulouse', 4), ('Nice', 4),
+('Tokyo', 5), ('Osaka', 5), ('Kyoto', 5), ('Nagoya', 5), ('Hiroshima', 5),
+('Mumbai', 6), ('Delhi', 6), ('Bangalore', 6), ('Hyderabad', 6), ('Chennai', 6),
+('Beijing', 7), ('Shanghai', 7), ('Guangzhou', 7), ('Shenzhen', 7), ('Chengdu', 7),
+('Sao Paulo', 8), ('Rio de Janeiro', 8), ('Brasilia', 8), ('Salvador', 8), ('Fortaleza', 8),
+('Sydney', 9), ('Melbourne', 9), ('Brisbane', 9), ('Perth', 9), ('Adelaide', 9),
+('London', 10), ('Manchester', 10), ('Birmingham', 10), ('Glasgow', 10), ('Liverpool', 10),
+('Rome', 11), ('Milan', 11), ('Naples', 11), ('Turin', 11), ('Palermo', 11),
+('Madrid', 12), ('Barcelona', 12), ('Valencia', 12), ('Seville', 12), ('Zaragoza', 12),
+('Seoul', 13), ('Busan', 13), ('Incheon', 13), ('Daegu', 13), ('Gwangju', 13),
+('Mexico City', 14), ('Guadalajara', 14), ('Monterrey', 14), ('Puebla', 14), ('Tijuana', 14),
+('Moscow', 15), ('Saint Petersburg', 15), ('Novosibirsk', 15), ('Yekaterinburg', 15), ('Kazan', 15),
+('Amsterdam', 16), ('Rotterdam', 16), ('The Hague', 16), ('Utrecht', 16), ('Eindhoven', 16),
+('Stockholm', 17), ('Gothenburg', 17), ('Malmo', 17), ('Uppsala', 17), ('Vasteras', 17),
+('Oslo', 18), ('Bergen', 18), ('Trondheim', 18), ('Stavanger', 18), ('Drammen', 18),
+('Buenos Aires', 19), ('Cordoba', 19), ('Rosario', 19), ('Mendoza', 19), ('La Plata', 19),
+('Johannesburg', 20), ('Cape Town', 20), ('Durban', 20), ('Pretoria', 20), ('Port Elizabeth', 20);
+-- 100 studentów
